@@ -3,7 +3,7 @@
     "short_name": "Shaun",
     "description": "Shaun Miller II Portfolio landing page",
     "lang": "en-US",
-    "start_url": "/",
+    "start_url": "/?utm_source=homescreen",
     "display": "standalone",
     "theme_color": "#05FFE6",
     "background_color": "#05FFE6",
