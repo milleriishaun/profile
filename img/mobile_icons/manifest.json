@@ -1,7 +1,7 @@
 {
     "name": "PortfolioPWA",
     "short_name": "Shaun",
-    "description": "Display mobile compatibility",
+    "description": "Shaun Miller II Portfolio landing page",
     "lang": "en-US",
     "start_url": "/",
     "display": "standalone",
