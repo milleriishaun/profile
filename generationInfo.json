@@ -1,0 +1,10 @@
+{
+    "generationTool": "pwabuilder-api",
+    "generationToolVersion": "2.0.1-rc.0",
+    "platformId": "web",
+    "platformPackage": "pwabuilder-web",
+    "platformVersion": "2.0.0-rc.2",
+    "generatedFrom": "Website Wizard",
+    "generationDate": "2018-07-19 22:11:02 Z",
+    "generatedURL": "https://milleriishaun.github.io/milleriishaun/img/manifest.json"
+}
