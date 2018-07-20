@@ -2,10 +2,10 @@
 
 var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
-  "/",
-  "/index.html",
-  "/index.html?homescreen=1",
-  "/?homescreen=1",
+  // "/",
+  // "/index.html",
+  // "/index.html?homescreen=1",
+  // "/?homescreen=1",
 
   "vendor/bootstrap/css/bootstrap.min.css",
   "vendor/font-awesome/css/font-awesome.min.css",
@@ -41,7 +41,7 @@ var precacheFiles = [
   "img/mobile_icons/android-icon-48x48.png",
   "img/mobile_icons/android-icon-72x72.png",
   "img/mobile_icons/android-icon-96x96.png",
-  "img/mobile_icons/android-icon-144x144.png",
+  "/milleriishaun/img/mobile_icons/android-icon-144x144.png",
   "img/mobile_icons/android-icon-192x192.png",
   "img/mobile_icons/apple-icon-57x57_gradient_round.png",
   "img/mobile_icons/apple-icon-57x57.png",
