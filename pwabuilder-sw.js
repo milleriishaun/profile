@@ -41,7 +41,6 @@ var precacheFiles = [
   "img/mobile_icons/android-icon-48x48.png",
   "img/mobile_icons/android-icon-72x72.png",
   "img/mobile_icons/android-icon-96x96.png",
-  "img/mobile_icons/android-icon-144x144.png",
   "img/mobile_icons/android-icon-192x192.png",
   "img/mobile_icons/apple-icon-57x57_gradient_round.png",
   "img/mobile_icons/apple-icon-57x57.png",
