@@ -87,6 +87,9 @@ self.addEventListener('fetch', function(evt) {
 function precache() {
   return caches.open(CACHE).then(function (cache) {
     return cache.addAll(precacheFiles);
+  }).catch(function(err) {
+    //open precache failed :(
+    console.log('SW precache failed to open: ', err);
   });
 }
 
@@ -95,7 +98,13 @@ function fromCache(request) {
   return caches.open(CACHE).then(function (cache) {
     return cache.match(request).then(function (matching) {
       return matching || Promise.reject('no-match');
+    }).catch(function(err) {
+      //match fromCache(from cache first to show fast) failed :(
+      console.log('SW fromCache failed to match + give Promise.reject(no-match)msg: ', err);
     });
+  }).catch(function(err) {
+    //open cache fromCache(from cache first to show fast) failed :(
+    console.log('SW fromCache failed to open cache: ', err);
   });
 }
 
@@ -105,11 +114,20 @@ function update(request) {
   return caches.open(CACHE).then(function (cache) {
     return fetch(request).then(function (response) {
       return cache.put(request, response);
+    }).catch(function(err) {
+      //update(call to server for newest version of file to use the next time we show to view) failed :(
+      console.log('SW update failed to fetch: ', err);
     });
+  }).catch(function(err) {
+    //open cache update(call to server for newest version of file to use the next time we show to view) failed :(
+    console.log('SW fromCache failed to open cache: ', err);
   });
 }
 
 function fromServer(request){
   //this is the fallback if it is not in the cache to go to the server and get it
-  return fetch(request).then(function(response){ return response});
+  return fetch(request).then(function(response){ return response}).catch(function(err) {
+    //open precache failed :(
+    console.log('SW fromServer fallback(failed to find in cache) which is going to server and getting it: ', err);
+  });
 }
