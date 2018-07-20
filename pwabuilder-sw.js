@@ -2,10 +2,15 @@
 
 var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
-  // "vendor/bootstrap/css/bootstrap.min.css",
-  // "vendor/font-awesome/css/font-awesome.min.css",
-  // "vendor/magnific-popup/magnific-popup.css",
-  // "css/freelancer.min.css",
+  "/",
+  "/index.html",
+  "/index.html?homescreen=1",
+  "/?homescreen=1",
+
+  "vendor/bootstrap/css/bootstrap.min.css",
+  "vendor/font-awesome/css/font-awesome.min.css",
+  "vendor/magnific-popup/magnific-popup.css",
+  "css/freelancer.min.css",
 
   "Images/2e6dc914-2f0a-62cb-aed2-04b951892d14.webPlatform.png",
   "Images/3a295167-1a97-446e-d0e9-fb770a2c96f2.webPlatform.png",
@@ -64,26 +69,59 @@ var precacheFiles = [
   "img/favicon_32x32_gradient_round_07P_icon.ico",
   "img/favicon_32x32_gradient_round_07P_icon.ico",
 
-      /* Add an array of files to precache for your app */
-    ];
+  /* Add an array of files to precache for your app */
+];
+
+
+//notify user they can update
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  // Update UI notify the user they can add to home screen
+  btnAdd.style.display = 'block';
+});
+
+//Check if the button on the phone is pressed
+btnAdd.addEventListener('click', (e) => {
+  // hide our user interface that shows our A2HS button
+  btnAdd.style.display = 'none';
+  // Show the prompt
+  deferredPrompt.prompt();
+  // Wait for the user to respond to the prompt
+  deferredPrompt.userChoice
+    .then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      } else {
+        console.log('User dismissed the A2HS prompt');
+      }
+      deferredPrompt = null;
+    });
+});
+
+
+//determine if the app was successfully installed
+window.addEventListener('appinstalled', (evt) => {
+  app.logEvent('a2hs', 'installed');
+});
 
 //Install stage sets up the cache-array to configure pre-cache content
-self.addEventListener('install', function(evt) {
+self.addEventListener('install', function (evt) {
   console.log('[PWA Builder] The service worker is being installed.');
-  evt.waitUntil(precache().then(function() {
+  evt.waitUntil(precache().then(function () {
     console.log('[PWA Builder] Skip waiting on install');
     return self.skipWaiting();
   }));
 });
 
 //allow sw to control of current page
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', function (event) {
   console.log('[PWA Builder] Claiming clients for current page');
   return self.clients.claim();
 });
 
-self.addEventListener('fetch', function(evt) {
-  console.log('[PWA Builder] The service worker is serving the asset.'+ evt.request.url);
+self.addEventListener('fetch', function (evt) {
+  console.log('[PWA Builder] The service worker is serving the asset.' + evt.request.url);
   evt.respondWith(fromCache(evt.request).catch(fromServer(evt.request)));
   evt.waitUntil(update(evt.request));
 });
@@ -92,7 +130,7 @@ self.addEventListener('fetch', function(evt) {
 function precache() {
   return caches.open(CACHE).then(function (cache) {
     return cache.addAll(precacheFiles);
-  }).catch(function(err) {
+  }).catch(function (err) {
     //open precache failed :(
     console.log('SW precache failed to open: ', err);
   });
@@ -103,11 +141,11 @@ function fromCache(request) {
   return caches.open(CACHE).then(function (cache) {
     return cache.match(request).then(function (matching) {
       return matching || Promise.reject('no-match');
-    }).catch(function(err) {
+    }).catch(function (err) {
       //match fromCache(from cache first to show fast) failed :(
       console.log('SW fromCache failed to match + give Promise.reject(no-match)msg: ', err);
     });
-  }).catch(function(err) {
+  }).catch(function (err) {
     //open cache fromCache(from cache first to show fast) failed :(
     console.log('SW fromCache failed to open cache: ', err);
   });
@@ -119,19 +157,21 @@ function update(request) {
   return caches.open(CACHE).then(function (cache) {
     return fetch(request).then(function (response) {
       return cache.put(request, response);
-    }).catch(function(err) {
+    }).catch(function (err) {
       //update(call to server for newest version of file to use the next time we show to view) failed :(
       console.log('SW update failed to fetch: ', err);
     });
-  }).catch(function(err) {
+  }).catch(function (err) {
     //open cache update(call to server for newest version of file to use the next time we show to view) failed :(
     console.log('SW fromCache failed to open cache: ', err);
   });
 }
 
-function fromServer(request){
+function fromServer(request) {
   //this is the fallback if it is not in the cache to go to the server and get it
-  return fetch(request).then(function(response){ return response}).catch(function(err) {
+  return fetch(request).then(function (response) {
+    return response
+  }).catch(function (err) {
     //open precache failed :(
     console.log('SW fromServer fallback(failed to find in cache) which is going to server and getting it: ', err);
   });
