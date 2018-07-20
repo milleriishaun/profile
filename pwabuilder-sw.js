@@ -72,6 +72,7 @@ var precacheFiles = [
   /* Add an array of files to precache for your app */
 ];
 
+let deferredPrompt;
 
 //notify user they can update
 window.addEventListener('beforeinstallprompt', (e) => {
