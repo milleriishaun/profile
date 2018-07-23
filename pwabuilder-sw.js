@@ -19,7 +19,7 @@ var precacheFiles = [
   "images/9aeb90fa-c620-6833-50bf-5b3c51989a25.webPlatform.png",
   "images/581abbac-adec-559f-8558-d9b913810477.webPlatform.png",
   "images/939df4c4-1bad-3065-28e0-f1b8af7621cf.webPlatform.png",
-  "milleriishaun/images/4388dab3-2e5e-e5bb-0969-3afe1ef9e5cb.webPlatform.png", //this doesn't work because idk where to insert /milleriishaun/
+  "images/4388dab3-2e5e-e5bb-0969-3afe1ef9e5cb.webPlatform.png", //this doesn't work because idk where to insert /milleriishaun/
   "images/b576374c-f3ef-1eb6-23a7-e83de53f4369.webPlatform.png",
   "images/c7e9a9c1-ef35-7887-3283-2f080d0c0c31.webPlatform.png",
   "images/e5fe5ba1-2e9f-25da-5a63-9645694c9bfc.webPlatform.png",
@@ -41,7 +41,7 @@ var precacheFiles = [
   "img/mobile_icons/android-icon-48x48.png",
   "img/mobile_icons/android-icon-72x72.png",
   "img/mobile_icons/android-icon-96x96.png",
-  "milleriishaun/img/mobile_icons/android-icon-144x144.png",
+  "img/mobile_icons/android-icon-144x144.png",
   "img/mobile_icons/android-icon-192x192.png",
   "img/mobile_icons/apple-icon-57x57_gradient_round.png",
   "img/mobile_icons/apple-icon-57x57.png",
