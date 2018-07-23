@@ -24,11 +24,6 @@
             "type": "image/png"
         },
         {
-            "src": "images/windows10/SplashScreen.scale-200.png.png",
-            "sizes": "1240x600",
-            "type": "image/png"
-        },
-        {
             "src": "images/e5fe5ba1-2e9f-25da-5a63-9645694c9bfc.webPlatform.png",
             "sizes": "300x300",
             "type": "image/png"
@@ -56,11 +51,6 @@
         {
             "src": "images/3a295167-1a97-446e-d0e9-fb770a2c96f2.webPlatform.png",
             "sizes": "620x300",
-            "type": "image/png"
-        },
-        {
-            "src": "images/ios/ios-appicon-1024-1024.png",
-            "sizes": "1024x1024",
             "type": "image/png"
         },
         {
