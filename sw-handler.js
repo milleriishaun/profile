@@ -25,7 +25,7 @@ window.onload = function(){
         } else {
             console.log('User dismissed the A2HS prompt');
         }
-        //deferredPrompt = null;
+        deferredPrompt = null;
         });
     });
 }
