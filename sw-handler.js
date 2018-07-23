@@ -8,6 +8,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
   btnAdd.style.display = 'block';
 });
 
+let btnAdd = document.getElementById("addToHomescreen");
+
 //Check if the button on the phone is pressed
 btnAdd.addEventListener('click', (e) => {
   // hide our user interface that shows our A2HS button
