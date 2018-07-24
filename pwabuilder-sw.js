@@ -62,6 +62,7 @@ var precacheFiles = [
   "img/mobile_icons/ms-icon-144x144.png",
   "img/mobile_icons/ms-icon-150x150.png",
   "img/mobile_icons/ms-icon-310x310.png",
+  "img/mobile_icons/ms-icon-192x192_gradient_round.png",
   "img/mobile_icons/ms-icon-512x512_gradient_round.png",
   "img/favicon_32x32_gradient_round_07P_icon.ico",
   "img/favicon_32x32_gradient_round_07P_icon.ico",
