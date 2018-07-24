@@ -32,10 +32,10 @@ var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
   "?homescreen=1",
 
-  // "vendor/bootstrap/css/bootstrap.min.css",
-  // "vendor/font-awesome/css/font-awesome.min.css",
-  // "vendor/magnific-popup/magnific-popup.css",
-  // "css/freelancer.min.css",
+  "vendor/bootstrap/css/bootstrap.min.css",
+  "vendor/font-awesome/css/font-awesome.min.css",
+  "vendor/magnific-popup/magnific-popup.css",
+  "css/freelancer.min.css",
 
   "images/2e6dc914-2f0a-62cb-aed2-04b951892d14.webPlatform.png",
   "images/3a295167-1a97-446e-d0e9-fb770a2c96f2.webPlatform.png",
