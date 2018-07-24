@@ -1,5 +1,6 @@
 
 let installPromptEvent;
+let btnInstall;
 
 window.addEventListener('beforeinstallprompt', (event) => {
   // Prevent Chrome <= 67 from automatically showing the prompt
