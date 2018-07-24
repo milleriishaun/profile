@@ -1,6 +1,7 @@
 let CACHE_NAME = 'pwabuilder-precache';
-let precacheFiles = [
-  '/'
+let urlsToCache = [
+  "img/mobile_icons/favicon-192x192_gradient_round.png",
+  "img/mobile_icons/ms-icon-512x512_gradient_round.png"
 ];
 
 self.addEventListener('install', function(event) {
@@ -8,7 +9,7 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_NAME)
     .then(function(cache) {
       console.log('Opened cache');
-      return cache.addAll(precacheFiles);
+      return cache.addAll(urlsToCache);
     }).catch(function (err) {
       //open precache failed :(
       console.log('SW precache failed to open: ', err);
