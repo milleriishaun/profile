@@ -12,11 +12,6 @@
             "src": "img/mobile_icons/ms-icon-512x512_gradient_round.png",
             "sizes": "512x512",
             "type": "image/png"
-        },
-        {
-            "src": "img/mobile_icons/ms-icon-192x192_gradient_round.png",
-            "sizes": "192x192",
-            "type": "image/png"
         }
     ]
 }
