@@ -1,6 +1,6 @@
 
 let installPromptEvent;
-let btnInstall;
+let btnInstall = document.querySelector("#addToHomescreen");
 
 window.addEventListener('beforeinstallprompt', (event) => {
   // Prevent Chrome <= 67 from automatically showing the prompt
