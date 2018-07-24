@@ -2,7 +2,7 @@
 
 var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
-  // "?homescreen=1",
+  "?homescreen=1",
 
   "vendor/bootstrap/css/bootstrap.min.css",
   "vendor/font-awesome/css/font-awesome.min.css",
