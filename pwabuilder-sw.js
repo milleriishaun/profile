@@ -1,3 +1,4 @@
+/*
 let CACHE_NAME = 'pwabuilder-precache';
 let urlsToCache = [
   "img/mobile_icons/favicon-192x192_gradient_round.png",
@@ -20,9 +21,9 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
   event.respondWith(caches.match(event.request));
 });
+*/
 
 
-/*
 
 
 //This is the service worker with the Cache-first network
@@ -176,4 +177,3 @@ function fromServer(request) {
   });
 }
 
-*/
