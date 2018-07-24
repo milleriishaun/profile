@@ -122,10 +122,15 @@ self.addEventListener('activate', function (event) {
 
 self.addEventListener('fetch', function (evt) {
   console.log('[PWA Builder] The service worker is serving the asset.' + evt.request.url);
-  evt.respondWith(fromCache(evt.request).catch(fromServer(evt.request)));
-  evt.waitUntil(update(evt.request));
+  evt.respondWith(caches.match(evt.request)); //fromCache(evt.request).catch(fromServer(evt.request)));
+  //evt.waitUntil(update(evt.request));
 });
 
+/*
+self.addEventListener('fetch', function(event) {
+  event.respondWith(caches.match(event.request));
+});
+*/
 
 function precache() {
   return caches.open(CACHE).then(function (cache) {
