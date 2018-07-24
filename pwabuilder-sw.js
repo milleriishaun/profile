@@ -91,9 +91,9 @@ self.addEventListener('activate', function (event) {
 });
 
 
-self.addEventListener('fetch', function(event) {
-  event.respondWith(caches.match(event.request));
-});
+// self.addEventListener('fetch', function(event) {
+//   event.respondWith(caches.match(event.request));
+// });
 
 self.addEventListener('fetch', function (evt) {
   console.log('[PWA Builder] The service worker is serving the asset.' + evt.request.url);
