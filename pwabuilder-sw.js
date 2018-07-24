@@ -1,6 +1,6 @@
 let CACHE_NAME = 'pwabuilder-precache';
 let precacheFiles = [
-  '/',
+  '/'
 ];
 
 self.addEventListener('install', function(event) {
@@ -9,6 +9,9 @@ self.addEventListener('install', function(event) {
     .then(function(cache) {
       console.log('Opened cache');
       return cache.addAll(precacheFiles);
+    }).catch(function (err) {
+      //open precache failed :(
+      console.log('SW precache failed to open: ', err);
     })
   );
 });
