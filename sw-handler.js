@@ -1,42 +1,28 @@
-let deferredPrompt;
 
-//notify user they can update
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  showAddToHomeScreen();
+let installPromptEvent;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent Chrome <= 67 from automatically showing the prompt
+  event.preventDefault();
+  // Stash the event so it can be triggered later.
+  installPromptEvent = event;
+  // Update the install UI to notify the user app can be installed
+  document.querySelector('#addToHomescreen').disabled = false;
 });
 
-function showAddToHomeScreen() {
-  let btnAdd = document.getElementById("addToHomescreen");
-  // Update UI notify the user they can add to home screen
-  btnAdd.style.display = "block";
-  btnAdd.addEventListener("click", addToHomeScreen);
-}
-
-function addToHomeScreen() {
-    let btnAdd = document.getElementById("addToHomescreen");
-    // hide our user interface that shows our A2HS button
-    btnAdd.style.display = 'none';
-    // Show the prompt
-    deferredPrompt.prompt();
+btnInstall.addEventListener('click', () => {
+    // Update the install UI to remove the install button
+    document.querySelector('#addToHomescreen').disabled = true;
+    // Show the modal add to home screen dialog
+    installPromptEvent.prompt();
     // Wait for the user to respond to the prompt
-    deferredPrompt.userChoice
-        .then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-                console.log('User accepted the A2HS prompt');
-            } else {
-                console.log('User dismissed the A2HS prompt');
-            }
-            deferredPrompt = null;
-        });
-}
-
-
-
-
-
-//determine if the app was successfully installed
-window.addEventListener('appinstalled', (evt) => {
-  app.logEvent('a2hs', 'installed');
+    installPromptEvent.userChoice.then((choice) => {
+      if (choice.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      } else {
+        console.log('User dismissed the A2HS prompt');
+      }
+      // Clear the saved prompt since it can't be used again
+      installPromptEvent = null;
+    });
 });
