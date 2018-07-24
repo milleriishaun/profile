@@ -56,6 +56,7 @@ var precacheFiles = [
   "img/mobile_icons/favicon-32x32.png",
   "img/mobile_icons/favicon-96x96_gradient_round.png",
   "img/mobile_icons/favicon-96x96.png",
+  "img/mobile_icons/favicon-192x192_gradient_round.png",
   "img/mobile_icons/favicon.ico",
   "img/mobile_icons/ms-icon-70x70.png",
   "img/mobile_icons/ms-icon-144x144_gradient_round.png",
@@ -66,6 +67,10 @@ var precacheFiles = [
   "img/mobile_icons/ms-icon-512x512_gradient_round.png",
   "img/favicon_32x32_gradient_round_07P_icon.ico",
   "img/favicon_32x32_gradient_round_07P_icon.ico",
+
+  'js/jqBootstrapValidation.js',
+  'js/contact_me.js',
+  'js/freelancer.min.js'
 
   /* Add an array of files to precache for your app */
 ];
@@ -90,7 +95,6 @@ self.addEventListener('fetch', function (evt) {
   evt.respondWith(fromCache(evt.request).catch(fromServer(evt.request)));
   evt.waitUntil(update(evt.request));
 });
-
 
 function precache() {
   return caches.open(CACHE).then(function (cache) {
