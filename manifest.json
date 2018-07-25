@@ -9,17 +9,22 @@
     "background_color": "#05FFE6",
     "icons": [
         {
-            "src": "./img/mobile_icons/android-icon-144x144.png",
+            "src": "./img/mobile_icons/orig_gradient_144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "./img/mobile_icons/android-icon-192x192.png",
+            "src": "./img/mobile_icons/orig_gradient_192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "./img/portfolio/ms-icon-512x512_gradient_round.png",
+            "src": "./img/mobile_icons/orig_gradient_400x400.png",
+            "sizes": "400x400",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/mobile_icons/orig_gradient_512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
