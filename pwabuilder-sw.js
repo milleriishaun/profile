@@ -35,7 +35,6 @@ var precacheFiles = [
 
   "img/mobile_icons/orig_gradient_144x144.png",
   "img/mobile_icons/orig_gradient_192x192.png",
-  "img/mobile_icons/orig_gradient_400x400.png",
   "img/mobile_icons/orig_gradient_512x512.png",
 
   "vendor/bootstrap/css/bootstrap.min.css",
