@@ -20,11 +20,6 @@
             "type": "image/png"
         },
         {
-            "src": "./img/mobile_icons/orig_gradient_400x400.png",
-            "sizes": "400x400",
-            "type": "image/png"
-        },
-        {
             "src": "./img/mobile_icons/orig_gradient_512x512.png",
             "sizes": "512x512",
             "type": "image/png"
