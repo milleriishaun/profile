@@ -31,7 +31,7 @@ self.addEventListener('fetch', function(event) {
 var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
   "?homescreen=1",
-  "?utm=homescreen",
+  "?utm=homescreen", //seems functional, must test download of app using assToHomescreen
 
   "img/mobile_icons/orig_gradient_144x144.png",
   "img/mobile_icons/orig_gradient_192x192.png",
