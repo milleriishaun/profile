@@ -40,7 +40,7 @@
         },
         {
             "src": "./img/mobile_icons/responsive_r16_192x192.png",
-            "sizes": "196x196",
+            "sizes": "192x192",
             "type": "image/png"
         },        {
             "src": "./img/mobile_icons/responsive_r23_144x144.png",
