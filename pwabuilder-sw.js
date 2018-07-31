@@ -31,78 +31,40 @@ self.addEventListener('fetch', function(event) {
 var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
   "?homescreen=1", // may not need homescreen cached
-  "?utm=homescreen", //seems functional, must test download of app using assToHomescreen
-
-  "img/mobile_icons/orig_gradient_144x144.png",
-  "img/mobile_icons/orig_gradient_192x192.png",
-  "img/mobile_icons/orig_gradient_512x512.png",
+  "?utm=homescreen", //seems functional, must test download of app using addToHomescreen
 
   "vendor/bootstrap/css/bootstrap.min.css",
   "vendor/font-awesome/css/font-awesome.min.css",
   "vendor/magnific-popup/magnific-popup.css",
   "css/freelancer.min.css",
 
-  "images/2e6dc914-2f0a-62cb-aed2-04b951892d14.webPlatform.png",
-  "images/3a295167-1a97-446e-d0e9-fb770a2c96f2.webPlatform.png",
-  "images/3c283f0c-c1ad-6519-0606-feb469a25855.webPlatform.png",
-  "images/8d085745-1dd0-0b23-8694-4a2f9d6d9536.webPlatform.png",
-  "images/9aeb90fa-c620-6833-50bf-5b3c51989a25.webPlatform.png",
-  "images/581abbac-adec-559f-8558-d9b913810477.webPlatform.png",
-  "images/939df4c4-1bad-3065-28e0-f1b8af7621cf.webPlatform.png",
-  "images/4388dab3-2e5e-e5bb-0969-3afe1ef9e5cb.webPlatform.png",
-  "images/b576374c-f3ef-1eb6-23a7-e83de53f4369.webPlatform.png",
-  "images/c7e9a9c1-ef35-7887-3283-2f080d0c0c31.webPlatform.png",
-  "images/e5fe5ba1-2e9f-25da-5a63-9645694c9bfc.webPlatform.png",
-
-  "img/favicon_32x32_gradient_round_07P_icon.ico",
-  "img/favicon_96x96_gradient_round_KiK_icon.ico",
   "img/profile.png",
+
   "img/portfolio/cabin.png",
   "img/portfolio/cake.png",
   "img/portfolio/circus.png",
   "img/portfolio/game.png",
   "img/portfolio/safe.png",
   "img/portfolio/submarine.png",
-  "img/portfolio/tissue_box_icon.png",
   "img/portfolio/inspirationalquotegenerator1.png",
   "img/portfolio/inspirationalquotegenerator2.png",
-  "img/mobile_icons/android-icon-36x36_gradient_round.png",
-  "img/mobile_icons/android-icon-36x36.png",
-  "img/mobile_icons/android-icon-48x48.png",
-  "img/mobile_icons/android-icon-72x72.png",
-  "img/mobile_icons/android-icon-96x96.png",
-  "img/mobile_icons/android-icon-144x144.png",
-  "img/mobile_icons/android-icon-192x192.png",
-  "img/mobile_icons/apple-icon-57x57_gradient_round.png",
-  "img/mobile_icons/apple-icon-57x57.png",
-  "img/mobile_icons/apple-icon-60x60.png",
-  "img/mobile_icons/apple-icon-72x72.png",
-  "img/mobile_icons/apple-icon-76x76.png",
-  "img/mobile_icons/apple-icon-114x114.png",
-  "img/mobile_icons/apple-icon-120x120.png",
-  "img/mobile_icons/apple-icon-144x144.png",
-  "img/mobile_icons/apple-icon-152x152.png",
-  "img/mobile_icons/apple-icon-180x180.png",
-  "img/mobile_icons/apple-icon-precomposed.png",
-  "img/mobile_icons/apple-icon.png",
-  "img/mobile_icons/favicon-16x16.png",
-  "img/mobile_icons/favicon-32x32.png",
-  "img/mobile_icons/favicon-96x96_gradient_round.png",
-  "img/mobile_icons/favicon-96x96.png",
-  "img/mobile_icons/favicon-192x192_gradient_round.png",
-  "img/mobile_icons/favicon.ico",
-  "img/mobile_icons/ms-icon-70x70.png",
-  "img/mobile_icons/ms-icon-144x144_gradient_round.png",
-  "img/mobile_icons/ms-icon-144x144.png",
-  "img/mobile_icons/ms-icon-150x150.png",
-  "img/mobile_icons/ms-icon-310x310.png",
-  "img/mobile_icons/ms-icon-192x192_gradient_round.png",
-  "img/mobile_icons/ms-icon-512x512_gradient_round.png",
-  "img/favicon_32x32_gradient_round_07P_icon.ico",
-  "img/favicon_32x32_gradient_round_07P_icon.ico",
+
+  "img/mobile_icons/xxhdpi_144x144.png",
+  "img/mobile_icons/xxxhdpi_192x192.png",
+  "img/mobile_icons/GooglePlayStore_512x512.png",
+  "img/mobile_icons/iTunesArtwork_512x512.png",
+  "img/mobile_icons/Icon-72@2x_144x144.png",
+  "img/mobile_icons/Icon@2x_114x114.png",
+  "img/mobile_icons/responsive_r16_192x192.png",
+  "img/mobile_icons/responsive_r23_144x144.png",
+  "img/mobile_icons/responsive_r36_36x36.png",
+  "img/mobile_icons/responsive_r36_36x36_favicon_icon.ico",
+  "img/mobile_icons/responsive_r80_512x512.png",
+  "img/mobile_icons/responsive_r80_1024x1024.png"
 
   // Add an array of files to precache for your app
 ];
+
 
 //Install stage sets up the cache-array to configure pre-cache content
 self.addEventListener('install', function (evt) {
