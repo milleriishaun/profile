@@ -33,7 +33,7 @@ var precacheFiles = [
   "?homescreen=1", // may not need homescreen cached
   "?utm=homescreen", //seems functional, must test download of app using addToHomescreen
   //very important formatting in manifest.json... doesn't work if ./milleriishaun/ or "./?utm=homescreen". Must be no comments.
-  //new info: start_url must be "./" for PWA to work
+  //new info: start_url must be "./" for PWA to work... and it takes a long time for your to get the prompt again after accepting(2 days on mobile)
   "vendor/bootstrap/css/bootstrap.min.css",
   "vendor/font-awesome/css/font-awesome.min.css",
   "vendor/magnific-popup/magnific-popup.css",
