@@ -54,7 +54,8 @@
         },
         {
             "src": "./img/mobile_icons/responsive_r36_36x36_favicon_icon.ico",
-            "sizes": "36x36"
+            "sizes": "36x36",
+            "type": "image/x-icon"
         },
         {
             "src": "./img/mobile_icons/responsive_r80_512x512.png",
