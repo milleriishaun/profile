@@ -3,7 +3,7 @@
     "short_name": "PWA Profile",
     "description": "Landing page Progressive Web App with cache-first network",
     "lang": "en-US",
-    "start_url": "./milleriishaun/",
+    "start_url": "./?utm=homescreen",
     "display": "standalone",
     "theme_color": "#05FFE6",
     "background_color": "#05FFE6",
