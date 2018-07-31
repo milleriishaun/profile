@@ -32,6 +32,7 @@ var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
   "?homescreen=1", // may not need homescreen cached
   "?utm=homescreen", //seems functional, must test download of app using addToHomescreen
+  //very important formatting in manifest.json... doesn't work if "./?utm=homescreen", must be ./milleriishaun
 
   "vendor/bootstrap/css/bootstrap.min.css",
   "vendor/font-awesome/css/font-awesome.min.css",
