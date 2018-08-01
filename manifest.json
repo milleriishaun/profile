@@ -203,11 +203,7 @@
             "sizes": "310x310",
             "type": "image/png"
         },
-        {
-            "src": "./img/mobile_icons/iOS/Windows/responsive_r00_310x150.png",
-            "sizes": "310x150",
-            "type": "image/png"
-        },
+
         {
             "src": "./img/mobile_icons/xxhdpi_144x144.png",
             "sizes": "144x144",
@@ -238,16 +234,8 @@
             "sizes": "29x29",
             "type": "image/png"
         },
-        {
-            "src": "./img/mobile_icons/Icon-Small_40x40.png",
-            "sizes": "40x40",
-            "type": "image/png"
-        },
-        {
-            "src": "./img/mobile_icons/Icon-Small_50x50.png",
-            "sizes": "50x50",
-            "type": "image/png"
-        },
+
+
         {
             "src": "./img/mobile_icons/Icon_57x57.png",
             "sizes": "57x57",
@@ -308,12 +296,8 @@
             "sizes": "512x512",
             "type": "image/png"
         },
+
         {
-            "src": "./img/mobile_icons/iTunesArtwork@2x_1024x1024.png",
-            "sizes": "1024x1024",
-            "type": "image/png"
-        },
-                {
             "src": "./img/mobile_icons/Icon-83.5@2x_167x167.png",
             "sizes": "167x167",
             "type": "image/png"
@@ -383,11 +367,7 @@
             "sizes": "144x144",
             "type": "image/png"
         },
-        {
-            "src": "./imimg/mobile_icons/xxxhdpi_192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
+
         {
             "src": "./img/mobile_icons/GooglePlayStore_512x512.png",
             "sizes": "512x512",

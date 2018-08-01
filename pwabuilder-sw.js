@@ -77,7 +77,12 @@ var precacheFiles = [
   "img/mobile_icons/Windows/responsive_r00_70x70.png",
   "img/mobile_icons/Windows/responsive_r00_150x150.png",
   "img/mobile_icons/Windows/responsive_r00_310x310.png",
-  "img/mobile_icons/iOS/Windows/responsive_r00_310x150.png",
+  // "img/mobile_icons/iOS/Windows/responsive_r00_310x150.png",
+//   {
+//     "src": "./img/mobile_icons/iOS/Windows/responsive_r00_310x150.png",
+//     "sizes": "310x150",
+//     "type": "image/png"
+// },
   "browserconfig.xml",
   "img/mobile_icons/xxhdpi_144x144.png",
   "img/mobile_icons/favicon-16x16.png",
@@ -85,8 +90,18 @@ var precacheFiles = [
   "img/mobile_icons/favicon.ico",
   "img/mobile_icons/safari-pinned-tab.svg",
   "img/mobile_icons/Icon-Small_29x29.png",
-  "img/mobile_icons/Icon-Small_40x40.png",
-  "img/mobile_icons/Icon-Small_50x50.png",
+  // "img/mobile_icons/Icon-Small_40x40.png",
+//   {
+//     "src": "./img/mobile_icons/Icon-Small_40x40.png",
+//     "sizes": "40x40",
+//     "type": "image/png"
+// },
+  // "img/mobile_icons/Icon-Small_50x50.png",
+//   {
+//     "src": "./img/mobile_icons/Icon-Small_50x50.png",
+//     "sizes": "50x50",
+//     "type": "image/png"
+// },
   "img/mobile_icons/Icon_57x57.png",
   "img/mobile_icons/Icon-Small@2x_58x58.png",
   "img/mobile_icons/Icon-72_72x72.png",
@@ -99,7 +114,12 @@ var precacheFiles = [
   "img/mobile_icons/Icon-76@2x_152x152.png",
   "img/mobile_icons/Icon-60@3x_180x180.png",
   "img/mobile_icons/iTunesArtwork_512x512.png",
-  "img/mobile_icons/iTunesArtwork@2x_1024x1024.png",
+  // "img/mobile_icons/iTunesArtwork@2x_1024x1024.png",
+//   {
+//     "src": "./img/mobile_icons/iTunesArtwork@2x_1024x1024.png",
+//     "sizes": "1024x1024",
+//     "type": "image/png"
+// },
   "img/mobile_icons/Icon-83.5@2x_167x167.png",
   "img/mobile_icons/Icon-Small@3x_87x87.png",
   "img/mobile_icons/Icon-Notification_20x20.png",
@@ -115,7 +135,12 @@ var precacheFiles = [
   "img/mobile_icons/hdpi_72x72.png",
   "img/mobile_icons/xhdpi_96x96.png",
   "img/mobile_icons/xxhdpi_144x144.png",
-  "img/mobile_icons/xxxhdpi_192x192.png",
+  // "img/mobile_icons/xxxhdpi_192x192.png",
+//   {
+//     "src": "./imimg/mobile_icons/xxxhdpi_192x192.png",
+//     "sizes": "192x192",
+//     "type": "image/png"
+// },
   "img/mobile_icons/GooglePlayStore_512x512.png",
   "img/mobile_icons/mstile-150x150.png",
 
