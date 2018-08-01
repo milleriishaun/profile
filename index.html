@@ -6,11 +6,8 @@
   <!-- PWA builder registration file -->
   <script src="pwabuilder-sw-register.js"></script>
 
-  <!-- Manifest Meta Data for Mobile -->
+  <!-- Manifest Meta Data for PWA/Service Worker -->
   <link href="manifest.json" rel="manifest" >
-  <meta name="msapplication-TileColor" content="#05FFE6">
-  <meta name="msapplication-TileImage" content="img/mobile_icons/xxhdpi_144x144.png">
-  <meta name="theme-color" content="#05FFE6">
 
   <!-- Mobile using the Manifest generator -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -20,6 +17,8 @@
   <meta name="msapplication-navbutton-color" content="#05FFE6">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="msapplication-starturl" content="https://milleriishaun.github.io/milleriishaun/">
+
+
 
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -35,51 +34,123 @@
   <!-- Custom styles for this template -->
   <link href="css/freelancer.min.css" rel="stylesheet">
 
-  <!-- Change Mobile status bar to black -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <!-- Sample Mobile Icons Meta -->
-  <!-- <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="img/mobile_icons/android-icon-192x192.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/mobile_icons/apple-icon-57x57_gradient_round.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/mobile_icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/mobile_icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/mobile_icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/mobile_icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/mobile_icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/mobile_icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/mobile_icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/mobile_icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/mobile_icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/mobile_icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/mobile_icons/favicon-96x96_gradient_round.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/mobile_icons/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="img/mobile_icons/ms-icon-512x512_gradient_round.png"> -->
 
-  <!-- more icons generated from realfavicongenerator.net -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/mobile_icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/mobile_icons/favicon-32x32.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="64x64" href="img/mobile_icons/iOS/Icon-64.png">
+
+  <!-- Apple/Safari icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/mobile_icons/apple-touch-icon.png"> <!--Safari too-->
+  <link rel="apple-touch-icon" sizes="16x16" href="img/mobile_icons/iOS/Icon-16.png">
+  <link rel="apple-touch-icon" sizes="20x20" href="img/mobile_icons/iOS/Icon-20.png">
+  <link rel="apple-touch-icon" sizes="29x29" href="img/mobile_icons/iOS/Icon-29.png">
+  <link rel="apple-touch-icon" sizes="32x32" href="img/mobile_icons/iOS/Icon-32.png">
+  <link rel="apple-touch-icon" sizes="40x40" href="img/mobile_icons/iOS/Icon-40.png">
+  <link rel="apple-touch-icon" sizes="48x48" href="img/mobile_icons/iOS/Icon-48.png">
+  <link rel="apple-touch-icon" sizes="50x50" href="img/mobile_icons/iOS/Icon-50.png">
+  <link rel="apple-touch-icon" sizes="55x55" href="img/mobile_icons/iOS/Icon-55.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/mobile_icons/iOS/Icon-57.png">
+  <link rel="apple-touch-icon" sizes="58x58" href="img/mobile_icons/iOS/Icon-58.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/mobile_icons/iOS/Icon-60.png">
+  <link rel="apple-touch-icon" sizes="64x64" href="img/mobile_icons/iOS/Icon-64.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/mobile_icons/iOS/Icon-72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/mobile_icons/iOS/Icon-76.png">
+  <link rel="apple-touch-icon" sizes="80x80" href="img/mobile_icons/iOS/Icon-80.png">
+  <link rel="apple-touch-icon" sizes="87x87" href="img/mobile_icons/iOS/Icon-87.png">
+  <link rel="apple-touch-icon" sizes="88x88" href="img/mobile_icons/iOS/Icon-88.png">
+  <link rel="apple-touch-icon" sizes="100x100" href="img/mobile_icons/iOS/Icon-100.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/mobile_icons/iOS/Icon-114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/mobile_icons/iOS/Icon-120.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="img/mobile_icons/iOS/Icon-128.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/mobile_icons/iOS/Icon-144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/mobile_icons/iOS/Icon-152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/mobile_icons/iOS/Icon-167.png">
+  <link rel="apple-touch-icon" sizes="172x172" href="img/mobile_icons/iOS/Icon-172.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/mobile_icons/iOS/Icon-180.png">
+  <link rel="apple-touch-icon" sizes="196x196" href="img/mobile_icons/iOS/Icon-196.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="img/mobile_icons/iOS/Icon-256.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="img/mobile_icons/iOS/Icon-512.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/mobile_icons/iOS/Icon-1024.png">
+
+  <!-- Android icon -->
+  <link rel="icon" sizes="36x36" href="img/mobile_icons/Android/Icon-36.png">
+  <!-- <link rel="icon" sizes="48x48" href="img/mobile_icons/Android/Icon-48.png"> -->
+  <!-- <link rel="icon" sizes="72x72" href="img/mobile_icons/Android/Icon-72.png"> -->
+  <link rel="icon" sizes="96x96" href="img/mobile_icons/Android/Icon-96.png">
+  <!-- <link rel="icon" sizes="144x144" href="img/mobile_icons/Android/Icon-144.png"> -->
+  <link rel="icon" sizes="192x192" href="img/mobile_icons/Android/Icon-192.png">
+  <!-- <link rel="icon" sizes="512x512" href="img/mobile_icons/Android/Icon-512.png"> -->
+
+  <!-- Watch icon -->
+  <!-- <link rel="icon" sizes="48x48" href="img/mobile_icons/Watch/Icon-48.png"> -->
+  <!-- <link rel="icon" sizes="55x55" href="img/mobile_icons/Watch/Icon-55.png"> -->
+  <!-- <link rel="icon" sizes="80x80" href="img/mobile_icons/Watch/Icon-80.png"> -->
+  <link rel="icon" sizes="88x88" href="img/mobile_icons/Watch/Icon-88.png">
+  <!-- <link rel="icon" sizes="172x172" href="img/mobile_icons/Watch/Icon-172.png"> -->
+  <!-- <link rel="icon" sizes="196x196" href="img/mobile_icons/Watch/Icon-196.png"> -->
+  <!-- Square Windows tiles -->
+  <meta name="msapplication-square70x70logo" content="img/mobile_icons/Windows/responsive_r00_70x70.png">
+  <meta name="msapplication-square150x150logo" content="img/mobile_icons/Windows/responsive_r00_150x150.png">
+  <meta name="msapplication-square310x310logo" content="img/mobile_icons/Windows/responsive_r00_310x310.png">
+  <!-- Rectangular Windows tile -->
+  <meta name="msapplication-wide310x150logo" content="img/mobile_icons/iOS/Windows/responsive_r00_310x150.png">
+  <!-- Microsoft Edge -->
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="msapplication-TileColor" content="#05FFE6">
+  <meta name="msapplication-TileImage" content="img/mobile_icons/xxhdpi_144x144.png">
+  <meta name="theme-color" content="#05FFE6">
+
+  <!-- Generated Icons from RealFaviconGenerator.net -->
+  <!-- Windows/macOS Chrome, Windows/macOS Firefox, IE...(Classic Desktop Browsers) -->
   <link rel="icon" type="image/png" sizes="16x16" href="img/mobile_icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/mobile_icons/favicon-32x32.png">
+  <link rel="shortcut icon" href="img/mobile_icons/favicon.ico">
+  <!-- for macOS Safari -->
   <link rel="mask-icon" href="img/mobile_icons/safari-pinned-tab.svg" color="#ff0000">
 
-  <!-- random linked values for the server so that they could load -->
+  <!-- Special density and premium icons from a generator -->
+  <!-- iOS. iPhone/iPad. -->
+  <link rel="apple-touch-icon" sizes="29x29" href="img/mobile_icons/Icon-Small_29x29.png">
+  <link rel="apple-touch-icon" sizes="40x40" href="img/mobile_icons/Icon-Small_40x40.png">
+  <link rel="apple-touch-icon" sizes="50x50" href="img/mobile_icons/Icon-Small_50x50.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/mobile_icons/Icon_57x57.png">
+  <link rel="apple-touch-icon" sizes="58x58" href="img/mobile_icons/Icon-Small@2x_58x58.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/mobile_icons/Icon-72_72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/mobile_icons/Icon-76_76x76.png">
+  <link rel="apple-touch-icon" sizes="80x80" href="img/mobile_icons/Icon-Small-40@2x_80x80.png">
+  <link rel="apple-touch-icon" sizes="100x100" href="img/mobile_icons/Icon-Small-50@2x_100x100.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/mobile_icons/Icon@2x_114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/mobile_icons/Icon-60@2x_120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/mobile_icons/Icon-72@2x_144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/mobile_icons/Icon-76@2x_152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/mobile_icons/Icon-60@3x_180x180.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="img/mobile_icons/iTunesArtwork_512x512.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/mobile_icons/iTunesArtwork@2x_1024x1024.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/mobile_icons/Icon-83.5@2x_167x167.png">
+  <link rel="apple-touch-icon" sizes="87x87" href="img/mobile_icons/Icon-Small@3x_87x87.png">
+  <link rel="apple-touch-icon" sizes="20x20" href="img/mobile_icons/Icon-Notification_20x20.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/mobile_icons/Icon-Notification@3x_60x60.png">
+  <!-- iOS. Watch. -->
+  <link rel="icon" type="image/png" sizes="48x48" href="img/mobile_icons/AppIcon24x24@2x_48x48.png">
+  <link rel="icon" type="image/png" sizes="55x55" href="img/mobile_icons/AppIcon27.5x27.5@2x_55x55.png">
+  <link rel="icon" type="image/png" sizes="80x80" href="img/mobile_icons/AppIcon40x40@2x_80x80.png">
+  <link rel="icon" type="image/png" sizes="88x88" href="img/mobile_icons/AppIcon44x44@2x_88x88.png">
+  <link rel="icon" type="image/png" sizes="172x172" href="img/mobile_icons/AppIcon86x86@2x_172x172.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="img/mobile_icons/AppIcon98x98@2x_196x196.png">
+  <!-- Android. -->
+  <link rel="icon" type="image/png" sizes="36x36" href="img/mobile_icons/ldpi_36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/mobile_icons/mdpi_48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="img/mobile_icons/hdpi_72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/mobile_icons/xhdpi_96x96.png">
   <link rel="icon" type="image/png" sizes="144x144" href="img/mobile_icons/xxhdpi_144x144.png">
   <link rel="icon" type="image/png" sizes="192x192" href="img/mobile_icons/xxxhdpi_192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="img/mobile_icons/GooglePlayStore_512x512.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="img/mobile_icons/iTunesArtwork_512x512.png">
-  <link rel="icon" type="image/png" sizes="144x144" href="img/mobile_icons/Icon-72@2x_144x144.png">
-  <link rel="icon" type="image/png" sizes="114x114" href="img/mobile_icons/Icon@2x_114x114.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/mobile_icons/responsive_r16_192x192.png">
-  <link rel="icon" type="image/png" sizes="144x144" href="img/mobile_icons/responsive_r23_144x144.png">
-  <link rel="icon" type="image/png" sizes="36x36" href="img/mobile_icons/responsive_r36_36x36.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="img/mobile_icons/responsive_r80_512x512.png">
-  <link rel="icon" type="image/png" sizes="1024x1024" href="img/mobile_icons/responsive_r80_1024x1024.png">
 
   <!-- Page meta details -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Landing page Progressive Web App with cache-first network">
   <meta name="author" content="Shaun Miller II">
-  <link rel="shortcut icon" type="image/x-icon" sizes="36x36" href="img/mobile_icons/responsive_r36_36x36_favicon_icon.ico">
 
   <title>Shaun Miller II | full stack, engineer, UI/UX</title>
 
