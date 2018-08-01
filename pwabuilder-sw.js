@@ -69,7 +69,12 @@ var precacheFiles = [
   "img/mobile_icons/iOS/Icon-196.png",
   "img/mobile_icons/iOS/Icon-256.png",
   "img/mobile_icons/iOS/Icon-512.png",
-  "img/mobile_icons/iOS/Icon-1024.png",
+  // "img/mobile_icons/iOS/Icon-1024.png",
+//   {
+//     "src": ".img/mobile_icons/iOS/Icon-1024.png",
+//     "sizes": "1024x1024",
+//     "type": "image/png"
+// },
   "img/mobile_icons/Android/Icon-36.png",
   "img/mobile_icons/Android/Icon-96.png",
   "img/mobile_icons/Android/Icon-192.png",
