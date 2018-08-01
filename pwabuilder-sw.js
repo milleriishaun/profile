@@ -117,6 +117,7 @@ var precacheFiles = [
   "img/mobile_icons/xxhdpi_144x144.png",
   "img/mobile_icons/xxxhdpi_192x192.png",
   "img/mobile_icons/GooglePlayStore_512x512.png",
+  "img/mobile_icons/mstile-150x150.png",
 
   "img/profile.png",
 
